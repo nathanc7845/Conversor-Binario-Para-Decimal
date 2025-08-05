@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
+    <title>Conversor Binário e Decimal</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <h1>Conversor Binário & Decimal</h1>
+
+    <div class="container">
+
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="decimalToBin">Decimal → Binário</button>
+            <button class="tab-btn" data-tab="binToDecimal">Binário → Decimal</button>
+        </div>
+
+        <div id="decimalToBin" class="tab-content active">
+            <label for="decimalInput">Digite um número decimal:</label>
+            <input type="number" id="decimalInput" min="0" placeholder="Ex: 150" />
+            <input type="submit" id="btnDecimalToBin" value="Converter" />
+            <div id="resultadoDecimalToBin">---</div>
+        </div>
+
+        <div id="binToDecimal" class="tab-content">
+            <label for="binarioInput">Digite um número binário:</label>
+            <input type="text" id="binarioInput" placeholder="Ex: 10010110" />
+            <input type="submit" id="btnBinToDecimal" value="Converter" />
+            <div id="resultadoBinToDecimal">---</div>
+        </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
